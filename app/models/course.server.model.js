@@ -10,7 +10,7 @@ var mongoose = require('mongoose'),
  * Course Schema
  */
 var CourseSchema = new Schema({
-	name: {
+	title: {
 		type: String,
 		default: '',
 		required: 'Please fill Course name',
