@@ -9,7 +9,11 @@ angular.module('teachers').controller('TeachersController', ['$scope', '$statePa
 		$scope.create = function() {
 			// Create new Teacher object
 			var teacher = new Teachers ({
-				name: this.name
+				name: this.name,
+				designation: this.designation,
+				teacherId: this.teacherId,
+				phone: this.phone,
+				email: this.email
 			});
 
 			// Redirect after save
@@ -18,6 +22,10 @@ angular.module('teachers').controller('TeachersController', ['$scope', '$statePa
 
 				// Clear form fields
 				$scope.name = '';
+				$scope.designation = '';
+				$scope.teacherId = '';
+				$scope.phone = '';
+				$scope.email = '';
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
 			});
