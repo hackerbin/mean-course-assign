@@ -11,7 +11,13 @@
 				<span data-ng-bind="course.user.displayName"></span>
 			</small>
 			<h4 class="list-group-item-heading" data-ng-bind="course.title"></h4>
-            <h4 class="list-group-item-heading" data-ng-bind="course.courseCode"></h4>
+            <h5 class="list-group-item-heading" data-ng-bind="course.courseCode"></h5>
+            <h6 class="list-group-item-heading" data-ng-bind="course.category"></h6>
+            <h6 class="list-group-item-heading" data-ng-bind="course.section"></h6>
+            <h6 class="list-group-item-heading" data-ng-bind="course.semester"></h6>
+            <h6 class="list-group-item-heading" data-ng-bind="course.day"></h6>
+            <h6 class="list-group-item-heading" data-ng-bind="course.startTime"></h6>
+            <h6 class="list-group-item-heading" data-ng-bind="course.endTime"></h6>
         </a>
     </div>
     <div class="alert alert-warning text-center" data-ng-hide="!courses.$resolved || courses.length">
