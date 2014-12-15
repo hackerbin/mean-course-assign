@@ -37,6 +37,21 @@ var TeacherSchema = new Schema({
 		default: '',
 		trim: true
 	},
+	category: {
+		type: String,
+		default: '',
+		trim: true
+	},
+	department: {
+		type: String,
+		default: '',
+		trim: true
+	},
+	courseTaking: {
+		type: String,
+		default: '',
+		trim: true
+	},
 	created: {
 		type: Date,
 		default: Date.now

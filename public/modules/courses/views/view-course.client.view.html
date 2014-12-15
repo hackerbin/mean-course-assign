@@ -1,13 +1,13 @@
 <section data-ng-controller="CoursesController" data-ng-init="findOne()">
 	<div class="page-header">
 		<h1 class="list-group-item-heading" data-ng-bind="course.title"></h1>
-		<h2 class="list-group-item-heading" data-ng-bind="course.courseCode"></h2>
-		<h2 class="list-group-item-heading" data-ng-bind="course.category"></h2>
-		<h2 class="list-group-item-heading" data-ng-bind="course.section"></h2>
-		<h2 class="list-group-item-heading" data-ng-bind="course.semester"></h2>
-		<h2 class="list-group-item-heading" data-ng-bind="course.day"></h2>
-		<h2 class="list-group-item-heading" data-ng-bind="course.startTime"></h2>
-		<h2 class="list-group-item-heading" data-ng-bind="course.endTime"></h2>
+		<h3 class="list-group-item-heading" data-ng-bind="course.courseCode"></h3>
+		<h4 class="list-group-item-heading" data-ng-bind="course.category"></h4>
+		<h4 class="list-group-item-heading" data-ng-bind="course.section"></h4>
+		<h4 class="list-group-item-heading" data-ng-bind="course.semester"></h4>
+		<h4 class="list-group-item-heading" data-ng-bind="course.day"></h4>
+		<h4 class="list-group-item-heading" data-ng-bind="course.startTime"></h4>
+		<h4 class="list-group-item-heading" data-ng-bind="course.endTime"></h4>
 	</div>
 	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == course.user._id))">
 		<a class="btn btn-primary" href="/#!/courses/{{course._id}}/edit">

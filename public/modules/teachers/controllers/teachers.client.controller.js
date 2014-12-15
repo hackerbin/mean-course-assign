@@ -13,7 +13,10 @@ angular.module('teachers').controller('TeachersController', ['$scope', '$statePa
 				designation: this.designation,
 				teacherId: this.teacherId,
 				phone: this.phone,
-				email: this.email
+				email: this.email,
+				category:this.category,
+				department:this.department,
+				courseTaking:this.courseTaking
 			});
 
 			// Redirect after save
@@ -26,6 +29,9 @@ angular.module('teachers').controller('TeachersController', ['$scope', '$statePa
 				$scope.teacherId = '';
 				$scope.phone = '';
 				$scope.email = '';
+				$scope.category='';
+				$scope.department='';
+				$scope.courseTaking='';
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
 			});

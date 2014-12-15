@@ -5,6 +5,9 @@
 		<h3 data-ng-bind="teacher.designation"></h3>
 		<h3 data-ng-bind="teacher.phone"></h3>
 		<h3 data-ng-bind="teacher.email"></h3>
+		<h3 data-ng-bind="teacher.category"></h3>
+		<h3 data-ng-bind="teacher.department"></h3>
+		<h3 data-ng-bind="teacher.courseTaking"></h3>
 	</div>
 	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == teacher.user._id))">
 		<a class="btn btn-primary" href="/#!/teachers/{{teacher._id}}/edit">
