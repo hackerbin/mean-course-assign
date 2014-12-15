@@ -1,13 +1,13 @@
 <section data-ng-controller="TeachersController" data-ng-init="findOne()">
 	<div class="page-header">
 		<h1 data-ng-bind="teacher.name"></h1>
-		<h3 data-ng-bind="teacher.teacherId"></h3>
-		<h3 data-ng-bind="teacher.designation"></h3>
-		<h3 data-ng-bind="teacher.phone"></h3>
-		<h3 data-ng-bind="teacher.email"></h3>
-		<h3 data-ng-bind="teacher.category"></h3>
-		<h3 data-ng-bind="teacher.department"></h3>
-		<h3 data-ng-bind="teacher.courseTaking"></h3>
+		<h4 data-ng-bind="teacher.designation"></h4>
+		<h4 data-ng-bind="teacher.teacherId"></h4>
+		<h4 data-ng-bind="teacher.phone"></h4>
+		<h4 data-ng-bind="teacher.email"></h4>
+		<h4 data-ng-bind="teacher.category"></h4>
+		<h4 data-ng-bind="teacher.department"></h4>
+		<h4 data-ng-bind="teacher.courseTaking"></h4>
 	</div>
 	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == teacher.user._id))">
 		<a class="btn btn-primary" href="/#!/teachers/{{teacher._id}}/edit">
